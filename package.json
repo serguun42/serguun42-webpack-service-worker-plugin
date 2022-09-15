@@ -1,0 +1,38 @@
+{
+  "name": "serguun42-webpack-service-worker-plugin",
+  "version": "0.0.1",
+  "keywords": [
+    "webpack",
+    "service worker"
+  ],
+  "description": "A plugin used to minify, link and build Service Worker for Webpack.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/serguun42/serguun42-webpack-service-worker-plugin.git"
+  },
+  "main": "index.js",
+  "type": "commonjs",
+  "types": "index.d.ts",
+  "author": "serguun42",
+  "license": "BSL-1.0",
+  "bugs": {
+    "url": "https://github.com/serguun42/serguun42-webpack-service-worker-plugin/issues"
+  },
+  "homepage": "https://github.com/serguun42/serguun42-webpack-service-worker-plugin",
+  "scripts": {
+    "sayhi": "echo \"Hi\""
+  },
+  "peerDependencies": {
+    "webpack": "^5.9.0"
+  },
+  "devDependencies": {
+    "@types/webpack": "5.28.0",
+    "eslint": "8.23.1",
+    "eslint-config-airbnb-base": "15.0.0",
+    "eslint-config-prettier": "8.5.0",
+    "eslint-plugin-import": "2.26.0",
+    "eslint-plugin-prettier": "4.2.1",
+    "prettier": "2.7.1",
+    "typescript": "4.8.3"
+  }
+}
