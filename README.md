@@ -1,10 +1,12 @@
 # serguun42 Webpack ServiceWorker Plugin
 
-Plugin used to minify, link and build Service Worker for Webpack. Unlike `workbox-webpack-plugin`, this plugin's primary task is to build not to generate new SW or inject large code blocks into existing one.V
+Plugin used to minify, link and build Service Worker for Webpack. Unlike `workbox-webpack-plugin`, this plugin's primary task is to build not to generate new SW or inject large code blocks into existing one.
 
 ### Usage
 
-In webpack config (`webpack.config.js`):
+Install with npm – `npm i github:serguun42/serguun42-webpack-service-worker-plugin`, use with Webpack 5+.
+
+In webpack config (*usually `webpack.config.js`*):
 
 ```javascript
 const WebpackSWPlugin = require("serguun42-webpack-service-worker-plugin");
