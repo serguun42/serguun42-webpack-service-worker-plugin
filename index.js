@@ -1,3 +1,4 @@
+const path = require('path');
 const { EntryPlugin } = require('webpack');
 
 class WebpackSWPlugin {
@@ -39,6 +40,9 @@ class WebpackSWPlugin {
       path: parentCompiler.options.output.path,
       filename: this.config.output,
     };
+
+    if (path.resolve(outputOptions.filename) === path.normalize(outputOptions.filename))
+      outputOptions.filename = path.relative(outputOptions.path, outputOptions.filename);
 
     const childCompiler = compilation.createChildCompiler(this.pluginName, outputOptions, []);
 
