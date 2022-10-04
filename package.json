@@ -1,6 +1,6 @@
 {
-  "name": "serguun42-webpack-service-worker-plugin",
-  "version": "1.1.0",
+  "name": "@serguun42/webpack-service-worker-plugin",
+  "version": "1.1.1",
   "keywords": [
     "webpack",
     "service worker"
@@ -8,7 +8,7 @@
   "description": "A plugin used to minify, link and build Service Worker for Webpack.",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/serguun42/serguun42-webpack-service-worker-plugin.git"
+    "url": "git+https://github.com/serguun42/webpack-service-worker-plugin.git"
   },
   "type": "commonjs",
   "main": "index.js",
@@ -16,9 +16,9 @@
   "author": "serguun42",
   "license": "BSL-1.0",
   "bugs": {
-    "url": "https://github.com/serguun42/serguun42-webpack-service-worker-plugin/issues"
+    "url": "https://github.com/serguun42/webpack-service-worker-plugin/issues"
   },
-  "homepage": "https://github.com/serguun42/serguun42-webpack-service-worker-plugin",
+  "homepage": "https://github.com/serguun42/webpack-service-worker-plugin",
   "scripts": {
     "lint": "eslint . --ext .js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore"
   },
