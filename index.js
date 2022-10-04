@@ -1,5 +1,7 @@
 const path = require('path');
-const { EntryPlugin } = require('webpack');
+const { EntryPlugin: EntryPluginV5, SingleEntryPlugin: EntryPluginV4 } = require('webpack');
+
+const EntryPlugin = EntryPluginV5 || EntryPluginV4;
 
 class WebpackSWPlugin {
   /** @type {import("./index").WebpackSWPluginOptions} */
@@ -49,6 +51,9 @@ class WebpackSWPlugin {
     childCompiler.context = parentCompiler.context;
     childCompiler.inputFileSystem = parentCompiler.inputFileSystem;
     childCompiler.outputFileSystem = parentCompiler.outputFileSystem;
+
+    if (path.resolve(this.config.source) !== path.normalize(this.config.source))
+      this.config.source = path.resolve(this.config.source);
 
     new EntryPlugin(parentCompiler.context, this.config.source, this.pluginName).apply(childCompiler);
 
