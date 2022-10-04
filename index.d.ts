@@ -3,12 +3,12 @@ import webpack from 'webpack';
 declare namespace WebpackSWPlugin {
   interface WebpackSWPluginOptions {
     /**
-     * Path of ServiceWorker entry (_main_) file relative to `webpack.config.js` or project's root
+     * Path of Service Worker entry file relative to project's root
      * @default "src/service-worker.js"
      */
     source: string;
     /**
-     * Path of minified, linked and built ServiceWorker file inside of build folder
+     * Path of minified, linked and built Service Worker file inside relative to build folder
      * @default "service-worker.js"
      */
     output: string;

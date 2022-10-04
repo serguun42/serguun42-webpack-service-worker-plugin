@@ -42,7 +42,7 @@ module.exports = {
 
 | name     | description/type                                                                       | default                 |
 | -------- | -------------------------------------------------------------------------------------- | ----------------------- |
-| `source` | Path of Service Worker entry/main/single file relative to project's root               | `src/service-worker.js` |
+| `source` | Path of Service Worker entry file relative to project's root                           | `src/service-worker.js` |
 | `output` | Path of minified, linked and built Service Worker file inside relative to build folder | `service-worker.js`     |
 
 Generally can be used to side-compile any non-SW code, just change these two parameters.
