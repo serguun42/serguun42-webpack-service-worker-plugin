@@ -1,7 +1,7 @@
 const path = require('path');
-const { EntryPlugin: EntryPluginV5, SingleEntryPlugin: EntryPluginV4 } = require('webpack');
+const webpack = require('webpack');
 
-const EntryPlugin = EntryPluginV5 || EntryPluginV4;
+const EntryPlugin = webpack.EntryPlugin || webpack.SingleEntryPlugin;
 
 class WebpackSWPlugin {
   /** @type {import("./index").WebpackSWPluginOptions} */
